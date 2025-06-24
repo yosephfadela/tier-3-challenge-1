@@ -35,23 +35,16 @@ The application provides a visual summary of traffic and sales data that passed 
 
 ### Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-org/traffic-dashboard.git
-   cd traffic-dashboard
-   ```
-
-2. Install dependencies for both backend and frontend:
+1. Install dependencies for both backend and frontend:
     ```bash
        npm install
     ```
 
-3. Runs Server
+2. Runs Server
     ```bash
     npm run server
     ```
-4. In a separate terminal, run frontend
+3. In a separate terminal, run frontend
     ```bash
     npm run client
     ```
