@@ -27,16 +27,18 @@ function App() {
   return (
     <div style={{fontFamily: 'sans-serif', maxWidth: 900, margin: '40px auto', padding: 24, background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px #eee'}}>
       <h1 style={{marginBottom: 8}}>Traffic Statistics Dashboard</h1>
-      <div style={{display: 'flex', gap: 32, marginBottom: 32}}>
-        <div style={{flex: 1, background: '#f6f8fa', borderRadius: 8, padding: 24, textAlign: 'center'}}>
-          <div style={{fontSize: 18, color: '#888'}}>Completed Transactions</div>
-          <div style={{fontSize: 32, fontWeight: 700}}>{stats.completedTransactions}</div>
-        </div>
-        <div style={{flex: 1, background: '#f6f8fa', borderRadius: 8, padding: 24, textAlign: 'center'}}>
-          <div style={{fontSize: 18, color: '#888'}}>Visitors</div>
-          <div style={{fontSize: 32, fontWeight: 700}}>{stats.visitors}</div>
-        </div>
+
+        <div style={{display: 'flex', gap: 32, marginBottom: 32}}>
+            <div style={{flex: 1, background: '#f6f8fa', borderRadius: 8, padding: 24, textAlign: 'center'}}>
+              <div style={{fontSize: 18, color: '#888'}}>Completed Transactions</div>
+              <div style={{fontSize: 32, fontWeight: 700}}>{stats.completedTransactions}</div>
+            </div>
+            <div style={{flex: 1, background: '#f6f8fa', borderRadius: 8, padding: 24, textAlign: 'center'}}>
+                <div style={{fontSize: 18, color: '#888'}}>Visitors</div>
+                <div style={{fontSize: 32, fontWeight: 700}}>{stats.visitors}</div>
+            </div>
       </div>
+
       <h2 style={{margin: '32px 0 16px'}}>Average Order Value (Last 30 Days)</h2>
       <ResponsiveContainer width="100%" height={250}>
         <LineChart data={stats.avgOrderValue} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
@@ -53,6 +55,7 @@ function App() {
           <tr style={{background: '#e3e8ee'}}>
             <th style={{padding: 8, textAlign: 'left'}}>Country</th>
             <th style={{padding: 8, textAlign: 'right'}}>Sales ($)</th>
+             <th style={{padding: 8, textAlign: 'right'}}># of transactions</th>
           </tr>
         </thead>
         <tbody>
