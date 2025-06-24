@@ -30,8 +30,8 @@ The application provides a visual summary of traffic and sales data that passed 
 
 ### Prerequisites
 
-- Node.js (v22 or later)
-- npm or yarn
+- Node.js (v22)
+- npm
 
 ### Installation
 
@@ -53,5 +53,5 @@ The application provides a visual summary of traffic and sales data that passed 
     ```
 4. In a separate terminal, run frontend
     ```bash
-    npm start
+    npm run client
     ```

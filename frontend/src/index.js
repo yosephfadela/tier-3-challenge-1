@@ -55,7 +55,7 @@ function App() {
           <tr style={{background: '#e3e8ee'}}>
             <th style={{padding: 8, textAlign: 'left'}}>Country</th>
             <th style={{padding: 8, textAlign: 'right'}}>Sales ($)</th>
-             
+
           </tr>
         </thead>
         <tbody>
