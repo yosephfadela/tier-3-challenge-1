@@ -3,7 +3,8 @@ const { isVisitorsKpiEnabled } = require('./feature-flags');
 const createBaseCountriesList = (countries) => {
   return countries.map(country => ({
     countryName: country,
-    sales: 0
+    sales: 0,
+    numberOfTransactions: 0
   }));
 }
 
@@ -43,7 +44,7 @@ function getMockStats() {
     if (isVisitorsKpiEnabled()) {
         payload.visitors = visitors;
     } else {
-        payload.visitors = null; // or some default value
+        payload.visitors = 0; // or some default value
     }
 
     return payload;

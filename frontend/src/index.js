@@ -55,15 +55,16 @@ function App() {
           <tr style={{background: '#e3e8ee'}}>
             <th style={{padding: 8, textAlign: 'left'}}>Country</th>
             <th style={{padding: 8, textAlign: 'right'}}>Sales ($)</th>
+              <th style={{padding: 8, textAlign: 'right'}}>Trans</th>
 
           </tr>
         </thead>
         <tbody>
           {stats.salesByCountry.map(row => (
-            <tr key={row.country}>
-              <td style={{padding: 8}}>{row.country}</td>
+            <tr key={row.countryName}>
+              <td style={{padding: 8}}>{row.countryName}</td>
               <td style={{padding: 8, textAlign: 'right'}}>{row.sales.toLocaleString()}</td>
-
+              <td style={{padding: 8, textAlign: 'right'}}>{row.numberOfTransactions.toLocaleString()}</td>
             </tr>
           ))}
         </tbody>
